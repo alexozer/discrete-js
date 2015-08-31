@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Apportomo</title>
+		<style>
+			canvas {
+				width: 600px;
+				height: 600px;
+			}
+			table {
+				border-collapse: collapse;
+			}
+			table, th, td {
+				font-size: 24px;
+				border: 2px solid black;
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			h1 {
+				font-size: 60px;
+				margin: 0;
+			}
+			h2 {
+				font-size: 32px;
+				margin-bottom: 5px;
+			}
+			#system {
+				font-size: 40px;
+			}
+			#output {
+				width: 25%;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="title">Apportomo!</h1>
+
+		<h2>Total population: <u><span id="totalPop"></span></u></h2>
+		<h2>Number of seats: <u><span id="numSeats"></span></u></h2>
+		<h2>Standard divisor: <u><span id="stdDiv"></span></u></h2>
+
+		<h2>State Populations:</h2>
+		<table id="statesTable"></table>
+
+		<h2>Hamilton</h2>
+		<table id="hamiltonTable"></table>
+
+		<h2>Jefferson</h2>
+		<h3>Quota Range: <u><span id="jeffersonRange"></span></u></h3>
+		<table id="jeffersonTable"></table>
+
+		<h2>Webster</h2>
+		<h3>Quota Range: <u><span id="websterRange"></span></u></h3>
+		<table id="websterTable"></table>
+
+		<h2>Adams</h2>
+		<h3>Quota Range: <u><span id="adamsRange"></span></u></h3>
+		<table id="adamsTable"></table>
+
+		<h2>Huntington-Hill</h2>
+		<h3>Quota Range: <u><span id="hhRange"></span></u></h3>
+		<table id="hhTable"></table>
+
+		<h2>Quota Upper Quotas</h2>
+		<table id="quotaTable"></table>
+
+		<h2>Quota Results</h2>
+		<table id="quotaResults"></table>
+
+		<script src="js/bundle.js"></script>
+	</body>
+</html>

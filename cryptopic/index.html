@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CryptoPic</title>
+		<style>
+			canvas {
+				width: 600px;
+				height: 600px;
+			}
+			table {
+				border-collapse: collapse;
+			}
+			table, th, td {
+				font-size: 24px;
+				border: 2px solid black;
+			}
+			h2 {
+				font-size: 40px;
+				margin-bottom: 5px;
+			}
+			.key {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			#system {
+				font-size: 40px;
+			}
+			#output {
+				width: 25%;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Color key:</h2>
+		<table id="keyTable"></table>
+
+		<h2>Initial color grid</h2>
+		<canvas id="graph0"></canvas>
+
+		<h2>Binary encoding of colors</h2>
+		<table id="table0"></table>
+
+		<h2>Binary encoding with check digits</h2>
+		<table id="table1"></table>
+
+		<h2>Binary encoding with corruption</h2>
+		<table id="table2"></table>
+
+		<h2>Base10-encoded</h2>
+		<table id="table3"></table>
+
+		<h2>System</h2>
+		<span id="system">x + 3y = f</br>
+		4x + 2y = s</span>
+
+		<h2>Matrix-encoded base10 values</h2>
+		<table id="table4"></table>
+
+		<h2>Output sequence</h2>
+		<textarea id="output"></textarea>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.js"></script>-->
+		<script src="js/third-party/three.min.js"></script>
+
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.min.js"></script>-->
+		<script src="js/third-party/stats.min.js"></script>
+
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>-->
+		<!--<script src="js/third-party/mousetrap.min.js"></script>-->
+
+		<script src="js/bundle.js"></script>
+	</body>
+</html>
